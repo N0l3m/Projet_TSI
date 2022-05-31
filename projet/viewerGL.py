@@ -37,7 +37,7 @@ class ViewerGL:
         while not glfw.window_should_close(self.window):
             # nettoyage de la fenêtre : fond et profondeur
             GL.glClear(GL.GL_COLOR_BUFFER_BIT | GL.GL_DEPTH_BUFFER_BIT)
-
+            
             self.update_key()
 
             for obj in self.objs:
